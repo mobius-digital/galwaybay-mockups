@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Father's Day Gift Guide — Galway Bay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --olive: #3A3D2A;
+    --olive-deep: #2A2D1C;
+    --olive-darker: #1F2114;
+    --cream: #F7F6F1;
+    --cream-warm: #EFEEE7;
+    --ink: #181818;
+    --ink-mute: #6E6E60;
+    --line: #DCDAD0;
+    --gold: #B8A56D;
+    --rust: #A85730;
+    --white: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.55;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .display { font-family: 'Archivo Black', sans-serif; font-weight: 900; letter-spacing: -0.01em; }
+
+  /* ============ TOP URGENCY BAR ============ */
+  .urgency-bar {
+    background: var(--olive-deep);
+    color: var(--cream);
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .urgency-bar .pulse {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .urgency-bar .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .urgency-bar strong { color: var(--gold); font-weight: 700; }
+
+  /* ============ NAV ============ */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 48px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+  }
+  .logo {
+    font-family: 'DM Sans', serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.28em;
+    color: var(--ink);
+  }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .nav-links a { color: var(--ink); text-decoration: none; }
+  .nav-utility { display: flex; gap: 20px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* ============ HERO ============ */
+  .hero {
+    background: var(--cream-warm);
+    padding: 80px 24px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(58,61,42,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner { max-width: 920px; margin: 0 auto; position: relative; }
+  .date-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    background: rgba(58,61,42,0.08);
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--olive);
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    font-size: clamp(44px, 7vw, 88px);
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    color: var(--ink);
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .hero .subhead {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--ink-mute);
+    max-width: 620px;
+    margin: 0 auto 18px;
+  }
+  .hero .subhead strong { color: var(--ink); font-weight: 600; }
+
+  .award-strip {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 20px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    margin: 22px 0 32px;
+    font-size: 13px;
+    color: var(--ink);
+  }
+  .award-strip .mgs {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--olive-deep);
+  }
+  .award-strip .stars { color: var(--gold); letter-spacing: 0.05em; font-size: 14px; }
+  .award-strip .divider { width: 1px; height: 16px; background: var(--line); }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--olive-deep);
+    color: var(--cream);
+    padding: 18px 36px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .btn-primary:hover { background: var(--ink); }
+
+  .hero-microcopy {
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .hero-microcopy span { display: inline-flex; align-items: center; gap: 6px; }
+
+  /* ============ BUYER REASSURANCE BAR ============ */
+  .reassurance {
+    background: var(--olive-deep);
+    color: var(--cream);
+    padding: 36px 24px;
+  }
+  .reassurance-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .reassurance-item { display: flex; gap: 16px; align-items: flex-start; }
+  .reassurance-icon {
+    width: 36px; height: 36px;
+    border: 1px solid rgba(247,246,241,0.3);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .reassurance-item h4 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  .reassurance-item p { font-size: 14px; color: rgba(247,246,241,0.75); line-height: 1.45; }
+
+  /* ============ BUILT FOR THE SWING (moved up) ============ */
+  .trust-block {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 90px 48px;
+  }
+  .trust-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .trust-block h2 {
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .trust-items { display: flex; flex-direction: column; gap: 28px; }
+  .trust-item {
+    padding-left: 18px;
+    border-left: 2px solid var(--gold);
+  }
+  .trust-item h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--white);
+  }
+  .trust-item p { font-size: 15px; line-height: 1.5; color: rgba(247,246,241,0.72); }
+  .trust-item p strong { color: var(--cream); font-weight: 600; }
+
+  /* ============ SECTION HEADER ============ */
+  .section-header {
+    text-align: center;
+    padding: 90px 24px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .section-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--olive);
+    margin-bottom: 16px;
+  }
+  .section-header h2 {
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 0.95;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 18px;
+  }
+  .section-header .lead {
+    font-size: 18px;
+    color: var(--ink-mute);
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  /* ============ FILTER PILLS ============ */
+  .filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 24px 50px;
+    flex-wrap: wrap;
+  }
+  .filter-pill {
+    padding: 10px 22px;
+    border: 1px solid var(--line);
+    background: var(--white);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .filter-pill:hover { border-color: var(--olive); }
+  .filter-pill.active { background: var(--olive-deep); color: var(--cream); border-color: var(--olive-deep); }
+
+  /* ============ PRODUCT GRID ============ */
+  .products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+  .product-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px -16px rgba(24,24,24,0.12);
+  }
+  .product-image {
+    background: linear-gradient(135deg, var(--olive) 0%, var(--olive-darker) 100%);
+    height: 380px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 24px;
+    overflow: hidden;
+  }
+  .product-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(184,165,109,0.15) 0%, transparent 60%);
+  }
+  .product-image .placeholder-note {
+    position: absolute;
+    top: 16px; left: 16px;
+    font-size: 10px;
+    color: rgba(247,246,241,0.4);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .product-image .waterproof-badge {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: rgba(255,255,255,0.95);
+    color: var(--ink);
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    border-radius: 2px;
+    z-index: 2;
+  }
+  .product-image .product-silhouette {
+    color: rgba(247,246,241,0.18);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 96px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .product-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+  .persona-label {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 4px;
+    line-height: 1.1;
+  }
+  .persona-tagline {
+    font-size: 14px;
+    color: var(--olive);
+    font-style: italic;
+    margin-bottom: 18px;
+  }
+  .product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .product-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink-mute);
+    letter-spacing: 0.02em;
+  }
+  .product-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .product-rating {
+    font-size: 13px;
+    color: var(--ink-mute);
+    margin: 14px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .product-rating .stars { color: var(--gold); font-size: 14px; letter-spacing: 0.05em; }
+  .review-quote {
+    background: var(--cream-warm);
+    padding: 14px 16px;
+    border-left: 2px solid var(--gold);
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 18px;
+    font-style: italic;
+  }
+  .review-quote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-style: normal;
+    font-size: 12px;
+    color: var(--ink-mute);
+    font-weight: 600;
+  }
+  .product-bullets {
+    list-style: none;
+    margin-bottom: 22px;
+  }
+  .product-bullets li {
+    font-size: 13.5px;
+    color: var(--ink);
+    padding: 5px 0 5px 18px;
+    position: relative;
+  }
+  .product-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 12px;
+    width: 8px; height: 1px;
+    background: var(--olive);
+  }
+  .product-cta {
+    margin-top: auto;
+    display: block;
+    background: var(--olive-deep);
+    color: var(--cream);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .product-cta:hover { background: var(--ink); }
+
+  /* ============ PRESS / SOCIAL PROOF ============ */
+  .press {
+    background: var(--cream-warm);
+    padding: 70px 24px;
+    text-align: center;
+  }
+  .press-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 24px;
+  }
+  .press-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    opacity: 0.7;
+  }
+  .press-logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+    text-transform: uppercase;
+  }
+  .big-quote {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.35;
+    color: var(--ink);
+    font-style: italic;
+    font-weight: 500;
+  }
+  .big-quote .attrib {
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    font-style: normal;
+    color: var(--ink-mute);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .review-aggregate {
+    margin-top: 36px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 24px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+  .review-aggregate .stars { color: var(--gold); font-size: 18px; letter-spacing: 0.06em; }
+  .review-aggregate .score { font-weight: 700; color: var(--ink); }
+  .review-aggregate .count { color: var(--ink-mute); font-size: 14px; }
+
+  /* ============ FAQ ============ */
+  .faq {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 90px 24px;
+  }
+  .faq h2 {
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  .faq-sub {
+    text-align: center;
+    color: var(--ink-mute);
+    margin-bottom: 50px;
+    font-size: 16px;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  .faq-item summary {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-size: 22px;
+    color: var(--olive);
+    font-weight: 400;
+    transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .answer {
+    padding-top: 14px;
+    color: var(--ink-mute);
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
+  .faq-item .answer strong { color: var(--ink); }
+
+  /* ============ FINAL CTA ============ */
+  .final-cta {
+    background: var(--olive-deep);
+    color: var(--cream);
+    padding: 100px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(184,165,109,0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(184,165,109,0.06) 0%, transparent 50%);
+  }
+  .final-cta-inner { position: relative; max-width: 720px; margin: 0 auto; }
+  .final-cta h2 {
+    font-size: clamp(44px, 6vw, 76px);
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: var(--white);
+  }
+  .final-cta p {
+    font-size: 19px;
+    color: rgba(247,246,241,0.8);
+    margin-bottom: 36px;
+    line-height: 1.5;
+  }
+  .final-cta .btn-primary {
+    background: var(--gold);
+    color: var(--olive-darker);
+    font-size: 15px;
+    padding: 20px 44px;
+  }
+  .final-cta .btn-primary:hover { background: var(--cream); }
+  .final-cta .microcopy {
+    margin-top: 26px;
+    font-size: 13px;
+    color: rgba(247,246,241,0.6);
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .final-cta .microcopy span { display: inline-flex; align-items: center; gap: 6px; }
+  .final-cta .microcopy .stars { color: var(--gold); letter-spacing: 0.05em; }
+
+  /* ============ TRUST BAR ============ */
+  .trust-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 24px;
+    background: var(--cream);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .trust-bar-item { text-align: center; }
+  .trust-bar-item h5 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .trust-bar-item p { font-size: 13.5px; color: var(--ink-mute); }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--cream);
+    padding: 50px 48px 30px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    color: var(--ink-mute);
+    font-size: 13px;
+  }
+
+  /* ============ MOBILE ============ */
+  @media (max-width: 880px) {
+    nav { padding: 18px 24px; flex-wrap: wrap; gap: 12px; }
+    .nav-links { display: none; }
+    .reassurance-grid { grid-template-columns: 1fr; gap: 22px; }
+    .trust-grid { grid-template-columns: 1fr; gap: 32px; }
+    .trust-block { padding: 60px 24px; }
+    .products { grid-template-columns: 1fr; gap: 24px; }
+    .product-image { height: 280px; }
+    .product-image .product-silhouette { font-size: 64px; }
+    .press-logos { gap: 32px; }
+    .big-quote { font-size: 20px; }
+    .trust-bar { grid-template-columns: 1fr; gap: 24px; }
+    .urgency-bar { font-size: 12px; gap: 12px; }
+  }
+
+  /* annotation system */
+  .annotation {
+    position: absolute;
+    background: var(--rust);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP URGENCY BAR (NEW: shipping deadline + fixed threshold) ============ -->
+<div class="urgency-bar">
+  <span class="pulse"><span class="dot"></span><strong>Order by Tue, June 9</strong> for guaranteed Father's Day delivery</span>
+  <span style="opacity:0.6;">|</span>
+  <span>Free shipping on US orders over $150</span>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="logo">GALWAY</div>
+  <div class="nav-links">
+    <a href="#">Men's</a>
+    <a href="#">Women's</a>
+    <a href="#">Chino Rain Pant</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">Technology</a>
+  </div>
+  <div class="nav-utility">
+    <span>Search</span>
+    <span>Account</span>
+    <span>Cart</span>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="date-badge">Father's Day · June 15, 2026</div>
+    <h1 class="display">Gifts for the Golf Dad Who <em>Plays Through Anything</em></h1>
+    <p class="subhead">MyGolfSpy-recognized rain gear he'll actually wear. Skip the socks-and-balls combo — <strong>give him something that earns its spot in the bag.</strong></p>
+
+    <!-- Award proof above the fold -->
+    <div class="award-strip">
+      <span class="mgs">MyGolfSpy</span>
+      <span class="divider"></span>
+      <span>Editor's Choice — Rain Gear</span>
+      <span class="divider"></span>
+      <span class="stars">★★★★★</span>
+      <span>4.9 · 2,847 reviews</span>
+    </div>
+
+    <div>
+      <a href="#gift-finder" class="btn-primary">Find His Gift in 30 Seconds →</a>
+    </div>
+
+    <div class="hero-microcopy">
+      <span>✓ Free shipping over $150</span>
+      <span>✓ Free exchanges if the size is off</span>
+      <span>✓ Order by June 9 for Father's Day</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUYER REASSURANCE BAR (NEW: addresses gift-buyer anxieties) ============ -->
+<section class="reassurance">
+  <div class="reassurance-grid">
+    <div class="reassurance-item">
+      <div class="reassurance-icon">↻</div>
+      <div>
+        <h4>Got the size wrong?</h4>
+        <p>Free exchanges. No questions. We'll get him into the right size before his next round.</p>
+      </div>
+    </div>
+    <div class="reassurance-item">
+      <div class="reassurance-icon">?</div>
+      <div>
+        <h4>Not a golfer yourself?</h4>
+        <p>Pick the type of dad below. We'll match him to gear he'll actually pull out of the closet.</p>
+      </div>
+    </div>
+    <div class="reassurance-item">
+      <div class="reassurance-icon">★</div>
+      <div>
+        <h4>Never heard of us?</h4>
+        <p>Featured in MyGolfSpy. 2,847 five-star reviews. Worn by golfers from Bandon to St Andrews.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUILT FOR THE SWING (MOVED ABOVE products) ============ -->
+<section class="trust-block">
+  <div class="trust-grid">
+    <h2 class="display">Built for the Swing, Not Just the Elements</h2>
+    <div class="trust-items">
+      <div class="trust-item">
+        <h4>Award-Winning Performance</h4>
+        <p>Recognized by MyGolfSpy for <strong>unbeatable rain protection</strong> and mobility — not just on paper, on the course.</p>
+      </div>
+      <div class="trust-item">
+        <h4>Silent, Stretchable Fabric</h4>
+        <p>None of the "crinkly" plastic noise that ruins his backswing. <strong>He concentrates on the shot.</strong> Not the gear.</p>
+      </div>
+      <div class="trust-item">
+        <h4>Off-Course Style</h4>
+        <p>Clean silhouettes he'll wear at the 19th hole, not just the first tee. <strong>No "I'm wearing rain gear" look.</strong></p>
+      </div>
+      <div class="trust-item">
+        <h4>One System, All Conditions</h4>
+        <p>Weather doesn't stop his round. <strong>His apparel shouldn't either.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION HEADER (rewrites "Find His Perfect Fit") ============ -->
+<div class="section-header" id="gift-finder">
+  <div class="section-eyebrow">The Gift Finder</div>
+  <h2 class="display">Which Golf Dad Is He?</h2>
+  <p class="lead">Pick the dad you're shopping for. We'll show you the gear he'll actually use.</p>
+</div>
+
+<!-- ============ FILTER PILLS (NEW: price-tier shopping) ============ -->
+<div class="filter-bar">
+  <div class="filter-pill active">All Gifts</div>
+  <div class="filter-pill">Under $300</div>
+  <div class="filter-pill">Premium ($300–$450)</div>
+  <div class="filter-pill">The Splurge ($500+)</div>
+</div>
+
+<!-- ============ PRODUCTS (persona-led, with review quotes + ratings) ============ -->
+<div class="products">
+
+  <!-- CARD 1 -->
+  <div class="product-card">
+    <div class="product-image">
+      <span class="placeholder-note">Product Image</span>
+      <span class="waterproof-badge">30K Waterproof</span>
+      <span class="product-silhouette">Rain<br>or Shine</span>
+    </div>
+    <div class="product-body">
+      <div class="persona-label">The "Rain or Shine" Dad</div>
+      <div class="persona-tagline">Plays through downpours like they're sunshine.</div>
+
+      <div class="product-meta">
+        <span class="product-name">[NEW] Claddagh Chino Rain Pant</span>
+        <span class="product-price">$299</span>
+      </div>
+
+      <div class="product-rating">
+        <span class="stars">★★★★★</span> 4.9 (412 reviews)
+      </div>
+
+      <div class="review-quote">
+        "Bought these for my husband. He wore them in a Bandon downpour and immediately asked for a second pair. They look like normal chinos until it pours."
+        <span class="attrib">— Sarah K., verified buyer</span>
+      </div>
+
+      <ul class="product-bullets">
+        <li>30K waterproof / breathable fabric</li>
+        <li>Looks like regular chinos — silent on the swing</li>
+        <li>MyGolfSpy recognized performance</li>
+      </ul>
+
+      <a href="#" class="product-cta">Shop the Claddagh →</a>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="product-card">
+    <div class="product-image">
+      <span class="placeholder-note">Product Image</span>
+      <span class="waterproof-badge">20K Waterproof</span>
+      <span class="product-silhouette">Dawn<br>Patrol</span>
+    </div>
+    <div class="product-body">
+      <div class="persona-label">The "Dawn Patrol" Dad</div>
+      <div class="persona-tagline">First off the tee, even when the forecast is brutal.</div>
+
+      <div class="product-meta">
+        <span class="product-name">Ayle Pull-Up Rain Pant</span>
+        <span class="product-price">$329</span>
+      </div>
+
+      <div class="product-rating">
+        <span class="stars">★★★★★</span> 4.8 (287 reviews)
+      </div>
+
+      <div class="review-quote">
+        "Lightweight enough to pack in the bag, dry enough to keep me on the course through a 6 AM thunderstorm. Best gift my kids have given me in years."
+        <span class="attrib">— Tom R., verified buyer</span>
+      </div>
+
+      <ul class="product-bullets">
+        <li>Eyre LT fabric — warm-weather rain protection</li>
+        <li>Packs into a pocket, ready when weather turns</li>
+        <li>Pull-up design — goes on over his shoes</li>
+      </ul>
+
+      <a href="#" class="product-cta">Shop the Ayle →</a>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="product-card">
+    <div class="product-image">
+      <span class="placeholder-note">Product Image</span>
+      <span class="waterproof-badge">20K Waterproof</span>
+      <span class="product-silhouette">Year<br>Round</span>
+    </div>
+    <div class="product-body">
+      <div class="persona-label">The "Year-Round" Dad</div>
+      <div class="persona-tagline">Doesn't let weather decide when he plays.</div>
+
+      <div class="product-meta">
+        <span class="product-name">Erris Short Sleeve Rain Jacket</span>
+        <span class="product-price">$279</span>
+      </div>
+
+      <div class="product-rating">
+        <span class="stars">★★★★★</span> 4.9 (203 reviews)
+      </div>
+
+      <div class="review-quote">
+        "The short sleeves are the move. Full mobility on the swing, full protection in a warm-weather storm. My dad has worn it for 40 rounds straight."
+        <span class="attrib">— Mike D., verified buyer</span>
+      </div>
+
+      <ul class="product-bullets">
+        <li>Ultra-light Eyre LT fabric</li>
+        <li>Enhanced airflow vent system</li>
+        <li>20K waterproof protection — built for warm rain</li>
+      </ul>
+
+      <a href="#" class="product-cta">Shop the Erris →</a>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="product-card">
+    <div class="product-image">
+      <span class="placeholder-note">Product Image</span>
+      <span class="waterproof-badge">30K Waterproof</span>
+      <span class="product-silhouette">No<br>Comps.</span>
+    </div>
+    <div class="product-body">
+      <div class="persona-label">The "No Compromises" Dad</div>
+      <div class="persona-tagline">The gear pros pick when nothing else will do.</div>
+
+      <div class="product-meta">
+        <span class="product-name">Clifden Golf Rain Jacket</span>
+        <span class="product-price">$549</span>
+      </div>
+
+      <div class="product-rating">
+        <span class="stars">★★★★★</span> 5.0 (156 reviews)
+      </div>
+
+      <div class="review-quote">
+        "I've owned $400 jackets that failed in year two. The Clifden is the only one that's outlasted my swing instructor's predictions. Worth every cent."
+        <span class="attrib">— James P., verified buyer</span>
+      </div>
+
+      <ul class="product-bullets">
+        <li>Top-tier Eyre Pro 3-layer fabric</li>
+        <li>PostureLock Side Cinch — clean look at address</li>
+        <li>Waterproof coated zippers — zero compromises</li>
+      </ul>
+
+      <a href="#" class="product-cta">Shop the Clifden →</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============ PRESS / SOCIAL PROOF ============ -->
+<section class="press">
+  <div class="press-eyebrow">As recognized by</div>
+  <div class="press-logos">
+    <span class="press-logo">MyGolfSpy</span>
+    <span class="press-logo">Golf Digest</span>
+    <span class="press-logo">Today's Golfer</span>
+    <span class="press-logo">Plugged In Golf</span>
+  </div>
+
+  <blockquote class="big-quote">
+    "The crinkly noise of traditional rain gear is gone. The clean silhouette is what Tour pros wear off the course. This is what golf rain wear should have been all along."
+    <span class="attrib">— MyGolfSpy Review</span>
+  </blockquote>
+
+  <div class="review-aggregate">
+    <span class="stars">★★★★★</span>
+    <span class="score">4.9 / 5</span>
+    <span class="count">from 2,847 verified buyers</span>
+  </div>
+</section>
+
+<!-- ============ FAQ FOR GIFT-BUYERS (NEW: addresses anxieties) ============ -->
+<section class="faq">
+  <h2 class="display">Gift-Buying Without the Guesswork</h2>
+  <p class="faq-sub">The three things every gift-buyer asks us. Answered.</p>
+
+  <details class="faq-item" open>
+    <summary>What if I get the size wrong?</summary>
+    <div class="answer">
+      <strong>We'll swap it. Free.</strong> Hassle-free exchanges on every order. If he opens it on Father's Day and the fit's not right, send it back — we'll get the right size in his hands before his next tee time. No restocking fees, no return shipping costs.
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>I don't golf — how do I know which one to pick?</summary>
+    <div class="answer">
+      <strong>The personas above are built for exactly this.</strong> If he plays in any weather, he wants the Claddagh Chino. If he's a dawn-patrol guy with a packed schedule, the Ayle is purpose-built. The Erris is for warm-weather rounds. The Clifden is for the dad who wants the best-of-the-best, full stop. Still stuck? Chat with us — a real human will help in under a minute.
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>When do I need to order to get it by Father's Day?</summary>
+    <div class="answer">
+      <strong>Order by Tuesday, June 9</strong> for guaranteed delivery before Father's Day (June 15) anywhere in the continental US. Express shipping available at checkout for last-minute gifters through June 12.
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary>What if he doesn't like it?</summary>
+    <div class="answer">
+      <strong>Free returns. 60 days.</strong> If the gear doesn't earn its way into his bag, send it back for a full refund. Honestly though — our reorder rate is 38%, which means most golfers come back for a second piece.
+    </div>
+  </details>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <h2 class="display">Don't Give Him Another Tie.</h2>
+    <p>Give him the rain gear pros are switching to. Built for the swing. Backed by 2,847 five-star reviews. Guaranteed by Father's Day.</p>
+    <a href="#gift-finder" class="btn-primary">Shop the Gift Guide →</a>
+    <div class="microcopy">
+      <span><span class="stars">★★★★★</span> 4.9 / 2,847 reviews</span>
+      <span>✓ Free shipping over $150</span>
+      <span>✓ Free exchanges</span>
+      <span>✓ Order by June 9 for Father's Day</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR (consistent shipping threshold now) ============ -->
+<div class="trust-bar">
+  <div class="trust-bar-item">
+    <h5>Free Shipping</h5>
+    <p>On US orders over $150</p>
+  </div>
+  <div class="trust-bar-item">
+    <h5>Free Exchanges</h5>
+    <p>Wrong size? We'll swap it. No questions.</p>
+  </div>
+  <div class="trust-bar-item">
+    <h5>Premium Protection</h5>
+    <p>20K–30K waterproof. Built to last.</p>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p style="margin-bottom: 8px;">GALWAY BAY APPAREL · Never Miss a Day</p>
+  <p>© 2026 Galway Bay Apparel · This is a redesign mockup for Father's Day landing page review</p>
+</footer>
+
+</body>
+</html>
