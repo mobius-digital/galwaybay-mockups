@@ -457,6 +457,35 @@
     width: 8px; height: 1px;
     background: var(--olive);
   }
+  .use-cases {
+    list-style: none;
+    margin: 4px 0 18px;
+  }
+  .use-cases li {
+    font-size: 15px;
+    color: var(--ink);
+    padding: 8px 0 8px 24px;
+    position: relative;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .use-cases li::before {
+    content: '✓';
+    position: absolute;
+    left: 0; top: 8px;
+    color: var(--olive);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .spec-strip {
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    margin-bottom: 18px;
+  }
   .product-cta {
     margin-top: auto;
     display: block;
@@ -812,7 +841,7 @@
 <div class="section-header" id="gift-finder">
   <div class="section-eyebrow">The Gift Finder</div>
   <h2 class="display">Which Golf Dad Is He?</h2>
-  <p class="lead">Pick the dad you're shopping for. We'll show you the gear he'll actually use.</p>
+  <p class="lead">Tell us how he plays. We'll match him to the gear.</p>
 </div>
 
 <!-- ============ FILTER PILLS (NEW: price-tier shopping) ============ -->
@@ -831,11 +860,10 @@
     <div class="product-image">
       <span class="placeholder-note">Product Image</span>
       <span class="waterproof-badge">30K Waterproof</span>
-      <span class="product-silhouette">Rain<br>or Shine</span>
+      <span class="product-silhouette">Plays<br>Through<br>Anything</span>
     </div>
     <div class="product-body">
-      <div class="persona-label">The "Rain or Shine" Dad</div>
-      <div class="persona-tagline">Plays through downpours like they're sunshine.</div>
+      <div class="persona-label">The Plays-Through-Anything Pant</div>
 
       <div class="product-meta">
         <span class="product-name">[NEW] Claddagh Chino Rain Pant</span>
@@ -846,16 +874,18 @@
         <span class="stars">★★★★★</span> 4.9 (412 reviews)
       </div>
 
+      <ul class="use-cases">
+        <li>For the husband who plays no matter the forecast</li>
+        <li>For the dad who hates looking like he's in rain gear</li>
+        <li>For all-weather rounds, without the bulk</li>
+      </ul>
+
       <div class="review-quote">
         "Bought these for my husband. He wore them in a Bandon downpour and immediately asked for a second pair. They look like normal chinos until it pours."
         <span class="attrib">— Sarah K., verified buyer</span>
       </div>
 
-      <ul class="product-bullets">
-        <li>30K waterproof / breathable fabric</li>
-        <li>Looks like regular chinos — silent on the swing</li>
-        <li>MyGolfSpy recognized performance</li>
-      </ul>
+      <div class="spec-strip">30K Waterproof · Silent Fabric · 4-Way Stretch · MyGolfSpy Recognized</div>
 
       <a href="#" class="product-cta">Shop the Claddagh →</a>
     </div>
@@ -866,11 +896,10 @@
     <div class="product-image">
       <span class="placeholder-note">Product Image</span>
       <span class="waterproof-badge">20K Waterproof</span>
-      <span class="product-silhouette">Dawn<br>Patrol</span>
+      <span class="product-silhouette">Travel<br>Ready</span>
     </div>
     <div class="product-body">
-      <div class="persona-label">The "Dawn Patrol" Dad</div>
-      <div class="persona-tagline">First off the tee, even when the forecast is brutal.</div>
+      <div class="persona-label">The Perfect Travel Pant</div>
 
       <div class="product-meta">
         <span class="product-name">Ayle Pull-Up Rain Pant</span>
@@ -881,16 +910,18 @@
         <span class="stars">★★★★★</span> 4.8 (287 reviews)
       </div>
 
+      <ul class="use-cases">
+        <li>For the golf trip where weather can turn fast</li>
+        <li>For warm rounds and surprise summer storms</li>
+        <li>For the dad who packs light but won't get caught out</li>
+      </ul>
+
       <div class="review-quote">
         "Lightweight enough to pack in the bag, dry enough to keep me on the course through a 6 AM thunderstorm. Best gift my kids have given me in years."
         <span class="attrib">— Tom R., verified buyer</span>
       </div>
 
-      <ul class="product-bullets">
-        <li>Eyre LT fabric — warm-weather rain protection</li>
-        <li>Packs into a pocket, ready when weather turns</li>
-        <li>Pull-up design — goes on over his shoes</li>
-      </ul>
+      <div class="spec-strip">20K Waterproof · Packable Design · Pull-Up Over Shoes · Eyre LT Fabric</div>
 
       <a href="#" class="product-cta">Shop the Ayle →</a>
     </div>
@@ -901,11 +932,10 @@
     <div class="product-image">
       <span class="placeholder-note">Product Image</span>
       <span class="waterproof-badge">20K Waterproof</span>
-      <span class="product-silhouette">Year<br>Round</span>
+      <span class="product-silhouette">Hot &amp;<br>Humid</span>
     </div>
     <div class="product-body">
-      <div class="persona-label">The "Year-Round" Dad</div>
-      <div class="persona-tagline">Doesn't let weather decide when he plays.</div>
+      <div class="persona-label">The Hot-and-Humid Jacket</div>
 
       <div class="product-meta">
         <span class="product-name">Erris Short Sleeve Rain Jacket</span>
@@ -916,16 +946,18 @@
         <span class="stars">★★★★★</span> 4.9 (203 reviews)
       </div>
 
+      <ul class="use-cases">
+        <li>For warm climates where summer storms hit fast</li>
+        <li>For golf in Florida, Texas, and the Southeast</li>
+        <li>For the husband who overheats in a full rain jacket</li>
+      </ul>
+
       <div class="review-quote">
-        "The short sleeves are the move. Full mobility on the swing, full protection in a warm-weather storm. My dad has worn it for 40 rounds straight."
+        "Full mobility on the swing, full protection in a warm-weather storm. My dad has worn it for 40 rounds straight."
         <span class="attrib">— Mike D., verified buyer</span>
       </div>
 
-      <ul class="product-bullets">
-        <li>Ultra-light Eyre LT fabric</li>
-        <li>Enhanced airflow vent system</li>
-        <li>20K waterproof protection — built for warm rain</li>
-      </ul>
+      <div class="spec-strip">20K Waterproof · Ultra-Light Eyre LT · Enhanced Airflow · Short Sleeve</div>
 
       <a href="#" class="product-cta">Shop the Erris →</a>
     </div>
@@ -936,11 +968,10 @@
     <div class="product-image">
       <span class="placeholder-note">Product Image</span>
       <span class="waterproof-badge">30K Waterproof</span>
-      <span class="product-silhouette">No<br>Comps.</span>
+      <span class="product-silhouette">Dream<br>Trip</span>
     </div>
     <div class="product-body">
-      <div class="persona-label">The "No Compromises" Dad</div>
-      <div class="persona-tagline">The gear pros pick when nothing else will do.</div>
+      <div class="persona-label">The Dream-Trip Jacket</div>
 
       <div class="product-meta">
         <span class="product-name">Clifden Golf Rain Jacket</span>
@@ -951,16 +982,18 @@
         <span class="stars">★★★★★</span> 5.0 (156 reviews)
       </div>
 
+      <ul class="use-cases">
+        <li>For the Ireland or Scotland trip he's been planning</li>
+        <li>For Bandon, Pebble, and Pacific Northwest weather</li>
+        <li>For the husband who's serious about his gear</li>
+      </ul>
+
       <div class="review-quote">
         "I've owned $400 jackets that failed in year two. The Clifden is the only one that's outlasted my swing instructor's predictions. Worth every cent."
         <span class="attrib">— James P., verified buyer</span>
       </div>
 
-      <ul class="product-bullets">
-        <li>Top-tier Eyre Pro 3-layer fabric</li>
-        <li>PostureLock Side Cinch — clean look at address</li>
-        <li>Waterproof coated zippers — zero compromises</li>
-      </ul>
+      <div class="spec-strip">30K Waterproof · Eyre Pro 3-Layer · PostureLock Side Cinch · Coated Zippers</div>
 
       <a href="#" class="product-cta">Shop the Clifden →</a>
     </div>
